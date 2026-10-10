@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Get a small, random nudge to step outside."
+    />
+    <title>Outside Hours — Make room for outside</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main class="page">
+      <header class="topbar">
+        <a class="brand" href="#" aria-label="Outside Hours home">
+          <span class="brand-mark" aria-hidden="true">✳</span>
+          <span>outside hours</span>
+        </a>
+        <span class="top-note"><span class="live-dot"></span> A little nudge to get out there</span>
+      </header>
+
+      <section class="oracle" aria-labelledby="page-title">
+        <div class="eyebrow"><span>✳</span> LESS SCROLLING, MORE STROLLING</div>
+        <h1 id="page-title">Make room<br /><span>for outside.</span></h1>
+        <p class="intro">
+          Ask for a little inspiration. Get one random idea to<br class="desktop-break" />
+          take you away from your screen and into the world.
+        </p>
+
+        <form class="question-form" id="question-form">
+          <label class="sr-only" for="question">What would you like an idea for?</label>
+          <input
+            id="question"
+            name="question"
+            type="text"
+            maxlength="120"
+            placeholder="What should I do outside?"
+            autocomplete="off"
+          />
+          <button type="submit">
+            <span>Find an idea</span>
+            <span class="button-arrow" aria-hidden="true">↗</span>
+          </button>
+        </form>
+        <p class="input-hint">Just for fun—check local conditions before heading out.</p>
+
+        <div class="answer-card" id="answer-card" aria-live="polite" aria-atomic="true" hidden>
+          <div class="answer-topline">
+            <span class="answer-sparkle" aria-hidden="true">✳</span>
+            <span>YOUR OUTSIDE IDEA</span>
+          </div>
+          <p class="answer-text" id="answer-text"></p>
+          <button class="ask-again" id="ask-again" type="button">
+            Give me another <span aria-hidden="true">↻</span>
+          </button>
+        </div>
+
+        <div class="suggestions" aria-label="Try asking">
+          <span class="suggestions-label">PICK A LITTLE ADVENTURE</span>
+          <button class="suggestion" type="button">I have 10 minutes</button>
+          <button class="suggestion" type="button">I want to spot birds</button>
+          <button class="suggestion" type="button">I need a fresh-air break</button>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <span>Small ideas. Real-world adventures.</span>
+        <span>Random inspiration <span aria-hidden="true">✳</span> Go at your own pace</span>
+      </footer>
+    </main>
+  </body>
+</html>
