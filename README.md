@@ -10,7 +10,9 @@ The goal is to make the screen the shortest part of the experience. The suggesti
 
 ## Demo
 
-There is no hosted demo yet. To try the current version, download or clone the repository and open `index.html` in a browser. It is a static page and does not need a server.
+
+[outsidehour.netlify.app](https://outsidehour.netlify.app)
+
 
 ## Code
 
